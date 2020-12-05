@@ -1,0 +1,106 @@
+body {
+    font-size: 16px;
+}
+
+.site-nav {
+    height: 40px;
+    background-color: rgb(248, 249, 250);
+}
+
+.site-nav .list-item {
+    padding: 8px 8px;
+}
+
+.site-nav .list-item:first-of-type {
+    margin-left: 10px;
+}
+
+.list-horizontal .list-item{
+    display: inline-block;
+}
+
+.banner {
+    height: fit-content;
+    
+    padding: 15px;
+
+    background-color: #e9ecef;
+}
+
+.banner:before {
+    display: block;
+
+    background-size: contain;
+    height: 230px;
+
+    content: '';
+    background-image: url('/static/img/petstagram_pets_banner.png');
+    background-repeat: no-repeat;
+}
+
+#root {
+    width: 1046px;
+    margin: 0 auto;
+}
+
+
+section header {
+    padding: 25px 0;
+    margin-bottom: 25px;
+
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.page-title {
+    font-size: 3em;
+}
+
+.page-title, .sub-title {
+    font-weight: 300;
+}
+
+.row {
+    display: flex;
+}
+
+.row .col {
+    flex: 50%;
+}
+
+.button {
+    padding: 5px 15px;
+    border-radius: 3px;
+    border-style: none;
+    display: block;
+    width: fit-content;
+
+    font-size: 16px;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62;
+    cursor: pointer;
+}
+
+img {
+    min-width: 261px;
+    max-width: 100%;
+    min-height: 147px;
+}
+
+.pet-buttons {
+    padding-top: 10px;
+}
+
+.pet-buttons .blue {
+    background-color: rgb(50, 127, 250);
+}
+
+.underline {
+    text-decoration: underline;
+}

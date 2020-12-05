@@ -1,0 +1,17 @@
+label,
+input {
+    display: block;
+}
+
+.create-pet-page-title {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.submit-button {
+    margin-top: 10px;
+}
+
+.root {
+    margin-left: 10px;
+}

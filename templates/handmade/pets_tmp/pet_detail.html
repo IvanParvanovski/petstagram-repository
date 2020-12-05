@@ -1,0 +1,45 @@
+{% extends 'shared/../shared/site.html' %}
+{% load static %}
+
+{% block site_styles %}
+    <link rel="stylesheet" href="{% static 'css/pets_css/pets_details/index.css' %}">
+{% endblock %}
+
+{% block site_content %}
+
+    <div class="pet-image">
+        <img class="pet-img" src="{{ pet.image_url }}" alt="{{ pet.type }}:{{ pet.name }} Could not load.">
+    </div>
+
+    <div class="pet-info">
+        <div class="pet-details">
+            <ul class="list-pet-details list-horizontal">
+                <li class="list-item">
+                    <span class="underline">Type:</span> {{ pet.type }}
+                </li>
+
+                <li class="list-item">
+                    <span class="underline">Name:</span> {{ pet.name }}
+                </li>
+
+                <li class="list-item">
+                    <span class="underline">Age:</span> {{ pet.age }}
+                </li>
+            </ul>
+        </div>
+
+        <p>
+            Description: {{ pet.description }}
+        </p>
+
+        <div class="pet-buttons">
+            <a href="{% url 'like pet' pet.id %}">
+                <i class="far fa-heart"></i>
+            </a>
+        </div>
+
+        <span>Likes: {{ pet.like_set.count }}</span>
+    </div>
+
+
+{% endblock %}
