@@ -1,1 +1,1 @@
-# petstagram-repository
+# petstagram
